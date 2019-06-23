@@ -1,0 +1,42 @@
+.cards .card:hover .card__image {
+  color: #F03B58;
+}
+
+.cards .card:hover .card__Title {
+  color: #000;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: none !important;
+  font-size: 20px;
+}
+
+.cards .card .card__Title {
+  color: #000;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: none !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cards .card .card__Subtitle {
+  color: #038dfe;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: none !important;
+  font-weight: 600;
+}
+}
+
+.cards .card:hover .card__Subtitle {
+  color: #038dfe;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: none !important;
+  font-weight: 600;
+}
+
+.cards .card:hover .card__Description {
+  max-height: 1000px;
+  margin: -15px auto 30px auto;
+  transition: max-height 3s ease;
+  font-weight: 200;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: none !important;
+}

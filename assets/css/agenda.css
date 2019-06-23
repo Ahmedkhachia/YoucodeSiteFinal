@@ -1,0 +1,111 @@
+/*
+ CSS for the main interaction
+*/
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  src: url('../font/mont/Montserrat-Regular.ttf');
+
+}
+
+.tabset {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+  display: block;
+  position: relative;
+  top: 0;
+
+}
+
+.adnane {
+  position: relative;
+  bottom: 40px;
+  list-style-type: none;
+  border: 1px solid red;
+}
+
+input[type=radio]:before {
+  background: #fff;
+  -moz-background: transparent;
+  margin-top: -3px;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  width: 17px;
+  height: 17px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+
+.col-md-6 {
+  left: 25%;
+  text-align: center;
+
+}
+
+.footer-distributed {
+  margin-top: 0 !important;
+}
+
+
+
+
+
+@media (max-width: 640px) {
+  .col-md-6 {
+    left: 0;
+
+
+  }
+
+  .tabset label {
+    width: 80%;
+    margin-bottom: 30px !important;
+  }
+
+  .tabset input:first-child,
+  .tabset label:first-child {
+    text-align: center;
+    margin-top: 15% !important;
+  }
+}
+
+@media (max-width: 940px) {
+  .col-md-6 {
+    left: 0;
+
+  }
+
+  .tabset {
+    text-align: center;
+    margin-top: 10% !important;
+  }
+}
+
+@media (max-width: 766px) {
+
+  .col-md-6 {
+    left: 0;
+  }
+
+  .tabset {
+    text-align: center;
+    margin-top: 10% !important;
+  }
+}

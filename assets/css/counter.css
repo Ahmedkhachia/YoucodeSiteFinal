@@ -1,0 +1,39 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+
+.counter-container {
+  text-align: center;
+  padding-bottom: 10px;
+  border-right: 1px dashed black;
+  height: 150px;
+  
+}
+.counter-container h3 {
+  font-size:23px;
+  font-style: normal !important;
+}
+
+.counter-container:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+
+@media (max-width: 991px) {
+  .counter-container {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+  
+  .counter-container:last-child {
+    border-bottom: 0px dashed black;
+  }
+}
